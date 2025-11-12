@@ -1,0 +1,8 @@
+---
+MainSourceFile:  'C:/Users/jackh/Downloads/Matrix_Lab4/Dataflow/Dataflow/hls/.autopilot/db/matrix_mult.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '7:9'
+    FilePath:        matrix_mult.cpp
+...

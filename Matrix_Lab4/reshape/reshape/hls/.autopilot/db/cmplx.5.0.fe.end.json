@@ -1,0 +1,38 @@
+{
+    "1": {
+        "name": "matrix_mult_Pipeline_row",
+        "file": "matrix_mult.cpp",
+        "fileloc": "9",
+        "instructions": "33",
+        "total_instructions": "33",
+        "calls": "",
+        "basicblocks": "3",
+        "memory_accesses": "3",
+        "control_depth": "0",
+        "def_use_depth": "0",
+        "loads": {
+            "T": "1"
+        },
+        "stores": {
+            "T": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "matrix_mult",
+        "file": "matrix_mult.cpp",
+        "fileloc": "5",
+        "instructions": "17",
+        "total_instructions": "50",
+        "calls": "1",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "3",
+        "loads": {
+            "T": "2"
+        }
+    }
+}

@@ -1,0 +1,3 @@
+<pragmas>
+<pragma file="matrix_mult.cpp" line="6" pragmaType="interface" parentfunction="matrix_mult" mode="ap_ctrl_hs" port="return" name=""/>
+</pragmas>

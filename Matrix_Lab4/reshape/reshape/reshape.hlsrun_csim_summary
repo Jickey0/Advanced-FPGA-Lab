@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\reshape\\reshape.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/12/25 14:36:14",
+ "timestampMillis": "1762976174093",
+ "buildStep": {
+  "cmdId": "8538669a-e8c4-4e69-ad57-a69706c51f66",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\reshape\\logs\\reshape.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\hls_config.cfg --work_dir reshape ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\hls_config.cfg",
+   "--work_dir",
+   "reshape"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\reshape"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:36:14",
+ "timestampMillis": "1762976174094",
+ "status": {
+  "cmdId": "8538669a-e8c4-4e69-ad57-a69706c51f66",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/12/25 14:36:17",
+ "timestampMillis": "1762976177338",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrix_mult",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\matrix_mult.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/12/25 14:36:17",
+ "timestampMillis": "1762976177338",
+ "buildStep": {
+  "cmdId": "8be9a04a-e2eb-44ca-b962-5c52d8658d3a",
+  "name": "",
+  "logFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\reshape\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\reshape"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:36:17",
+ "timestampMillis": "1762976177339",
+ "status": {
+  "cmdId": "8be9a04a-e2eb-44ca-b962-5c52d8658d3a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:36:18",
+ "timestampMillis": "1762976178664",
+ "status": {
+  "cmdId": "8be9a04a-e2eb-44ca-b962-5c52d8658d3a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:36:18",
+ "timestampMillis": "1762976178738",
+ "status": {
+  "cmdId": "8538669a-e8c4-4e69-ad57-a69706c51f66",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:36:18",
+ "timestampMillis": "1762976178738",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:36:18",
+ "timestampMillis": "1762976178738",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

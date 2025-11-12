@@ -1,0 +1,37 @@
+{
+    "0": {
+        "name": "matrix_mult",
+        "file": "matrix_mult.cpp",
+        "fileloc": "5",
+        "instructions": "10",
+        "total_instructions": "65",
+        "calls": "1",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "0"
+    },
+    "1": {
+        "name": "Loop_row_proc",
+        "file": "matrix_mult.cpp",
+        "fileloc": "9",
+        "instructions": "55",
+        "total_instructions": "55",
+        "calls": "",
+        "basicblocks": "3",
+        "memory_accesses": "11",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3",
+            "T": "4"
+        },
+        "stores": {
+            "L": "6",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

@@ -1,0 +1,140 @@
+
+
+================================================================
+== Vitis HLS Report for 'matrix_mult'
+================================================================
+* Date:           Wed Nov 12 14:50:36 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        reshape
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: aartix7
+* Target device:  xa7a15t-cpg236-2I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.880 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        8|        8|  80.000 ns|  80.000 ns|    9|    9|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.75>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%B_addr = getelementptr i64 %B, i64 0, i64 0"   --->   Operation 4 'getelementptr' 'B_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [2/2] (1.75ns)   --->   "%B_load = load i1 %B_addr"   --->   Operation 5 'load' 'B_load' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%B_addr_1 = getelementptr i64 %B, i64 0, i64 1"   --->   Operation 6 'getelementptr' 'B_addr_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [2/2] (1.75ns)   --->   "%B_load_1 = load i1 %B_addr_1"   --->   Operation 7 'load' 'B_load_1' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+
+State 2 <SV = 1> <Delay = 1.75>
+ST_2 : Operation 8 [1/2] ( I:1.75ns O:1.75ns )   --->   "%B_load = load i1 %B_addr"   --->   Operation 8 'load' 'B_load' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%trunc_ln15 = trunc i64 %B_load" [matrix_mult.cpp:15]   --->   Operation 9 'trunc' 'trunc_ln15' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i64, i64 %B_load, i64 32" [matrix_mult.cpp:15]   --->   Operation 10 'partselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/2] ( I:1.75ns O:1.75ns )   --->   "%B_load_1 = load i1 %B_addr_1"   --->   Operation 11 'load' 'B_load_1' <Predicate = true> <Delay = 1.75> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 2> <RAM>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln15_1 = trunc i64 %B_load_1" [matrix_mult.cpp:15]   --->   Operation 12 'trunc' 'trunc_ln15_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_3 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i64, i64 %B_load_1, i64 32" [matrix_mult.cpp:15]   --->   Operation 13 'partselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln15 = call void @matrix_mult_Pipeline_row, i32 %AB, i64 %A, i32 %tmp_1, i32 %trunc_ln15, i32 %tmp_3, i32 %trunc_ln15_1" [matrix_mult.cpp:15]   --->   Operation 14 'call' 'call_ln15' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1"   --->   Operation 15 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %A, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %A"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %B, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %B"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %AB, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %AB"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln15 = call void @matrix_mult_Pipeline_row, i32 %AB, i64 %A, i32 %tmp_1, i32 %trunc_ln15, i32 %tmp_3, i32 %trunc_ln15_1" [matrix_mult.cpp:15]   --->   Operation 22 'call' 'call_ln15' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%ret_ln20 = ret" [matrix_mult.cpp:20]   --->   Operation 23 'ret' 'ret_ln20' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.755ns
+The critical path consists of the following:
+	'getelementptr' operation 1 bit ('B_addr') [11]  (0.000 ns)
+	'load' operation 64 bit ('B_load') on array 'B' [12]  (1.755 ns)
+
+ <State 2>: 1.755ns
+The critical path consists of the following:
+	'load' operation 64 bit ('B_load') on array 'B' [12]  (1.755 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

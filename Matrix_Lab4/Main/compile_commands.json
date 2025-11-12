@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Main",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=matrix_mult",
+      "-c",
+      "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Main\\matrix_mult.cpp"
+    ],
+    "file": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Main\\matrix_mult.cpp"
+  },
+  {
+    "directory": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Main",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Main\\matrix_tb.cpp"
+    ],
+    "file": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Main\\matrix_tb.cpp"
+  }
+]

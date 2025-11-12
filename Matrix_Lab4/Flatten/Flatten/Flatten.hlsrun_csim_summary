@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Flatten\\Flatten\\Flatten.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/12/25 14:48:44",
+ "timestampMillis": "1762976924259",
+ "buildStep": {
+  "cmdId": "c0370502-9d56-4441-b64f-23e7d99ca761",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Flatten\\Flatten\\logs\\Flatten.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Flatten\\hls_config.cfg --work_dir Flatten ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Flatten\\hls_config.cfg",
+   "--work_dir",
+   "Flatten"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Flatten"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:48:44",
+ "timestampMillis": "1762976924259",
+ "status": {
+  "cmdId": "c0370502-9d56-4441-b64f-23e7d99ca761",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/12/25 14:48:47",
+ "timestampMillis": "1762976927484",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrix_mult",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Flatten\\matrix_mult.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/12/25 14:48:47",
+ "timestampMillis": "1762976927485",
+ "buildStep": {
+  "cmdId": "cb398c87-e010-468a-80ef-a5d23f1364dc",
+  "name": "",
+  "logFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Flatten\\Flatten\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Flatten"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:48:47",
+ "timestampMillis": "1762976927485",
+ "status": {
+  "cmdId": "cb398c87-e010-468a-80ef-a5d23f1364dc",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:48:48",
+ "timestampMillis": "1762976928824",
+ "status": {
+  "cmdId": "cb398c87-e010-468a-80ef-a5d23f1364dc",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:48:48",
+ "timestampMillis": "1762976928894",
+ "status": {
+  "cmdId": "c0370502-9d56-4441-b64f-23e7d99ca761",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:48:48",
+ "timestampMillis": "1762976928895",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:48:48",
+ "timestampMillis": "1762976928895",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

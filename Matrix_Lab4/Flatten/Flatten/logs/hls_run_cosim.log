@@ -1,0 +1,274 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten'.
+INFO: [HLS 200-1611] Setting target device to 'xa7a15t-cpg236-2I'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=matrix_mult.cpp' from C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/matrix_mult.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=matrix_tb.cpp' from C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/matrix_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=matrix_mult' from C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xa7a15tcpg236-2I' from C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/vitis-comp.json
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling matrix_tb.cpp_pre.cpp.tb.cpp
+   Compiling matrix_mult.cpp_pre.cpp.tb.cpp
+   Compiling apatb_matrix_mult.cpp
+   Compiling apatb_matrix_mult_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+pdir_merged readonly
+pdir_merged readonly
+pdir_merged writeonly
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\jackh\Downloads\Matrix_Lab4\Flatten\Flatten\hls\sim\verilog>set PATH= 
+
+C:\Users\jackh\Downloads\Matrix_Lab4\Flatten\Flatten\hls\sim\verilog>call C:/Xilinx/2025.1/Vivado/bin/xelab xil_defaultlib.apatb_matrix_mult_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj matrix_mult.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib "ieee_proposed=./ieee_proposed" -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./matrix_mult_subsystem  -s matrix_mult  
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrix_mult_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj matrix_mult.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./matrix_mult_subsystem -s matrix_mult 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/AESL_automem_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/AESL_automem_AB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_AB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/AESL_automem_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_B
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/matrix_mult.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrix_mult_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/matrix_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_mult
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/matrix_mult_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_mult_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/matrix_mult_mul_32s_32s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_mult_mul_32s_32s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/matrix_mult_subsystem/matrix_mult_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jackh/Downloads/Matrix_Lab4/Flatten/Flatten/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4468] File : /proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.matrix_mult_subsystem_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.matrix_mult_mul_32s_32s_32_1_1(N...
+Compiling module xil_defaultlib.matrix_mult_flow_control_loop_pi...
+Compiling module xil_defaultlib.matrix_mult
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.AESL_automem_A
+Compiling module xil_defaultlib.AESL_automem_B
+Compiling module xil_defaultlib.AESL_automem_AB
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_matrix_mult_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot matrix_mult
+
+****** xsim v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Wed Nov 12 14:54:53 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/matrix_mult/xsim_script.tcl
+# xsim {matrix_mult} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=matrix_mult_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {matrix_mult.tcl}
+Time resolution is 1 ps
+source matrix_mult.tcl
+## run all
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------------------
+Name                         Type                           Size  Value
+-----------------------------------------------------------------------
+uvm_test_top                 matrix_mult_test_lib           -     @342 
+  top_env                    matrix_mult_env                -     @353 
+    matrix_mult_virtual_sqr  matrix_mult_virtual_sequencer  -     @390 
+      rsp_export             uvm_analysis_export            -     @399 
+      seq_item_export        uvm_seq_item_pull_imp          -     @517 
+      arbitration_queue      array                          0     -    
+      lock_queue             array                          0     -    
+      num_last_reqs          integral                       32    'd1  
+      num_last_rsps          integral                       32    'd1  
+    refm                     matrix_mult_reference_model    -     @368 
+      trans_num_idx          integral                       32    'h0  
+    subsys_mon               matrix_mult_subsystem_monitor  -     @381 
+      scbd                   matrix_mult_scoreboard         -     @537 
+        refm                 matrix_mult_reference_model    -     @368 
+          trans_num_idx      integral                       32    'h0  
+    refm                     matrix_mult_reference_model    -     @368 
+    matrix_mult_virtual_sqr  matrix_mult_virtual_sequencer  -     @390 
+    matrix_mult_cfg          matrix_mult_config             -     @367 
+      check_ena              integral                       32    'h0  
+      cover_ena              integral                       32    'h0  
+-----------------------------------------------------------------------
+
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 100 [0.00%] @ "125000"
+// RTL Simulation : 1 / 100 [25.00%] @ "225000"
+// RTL Simulation : 2 / 100 [25.00%] @ "265000"
+// RTL Simulation : 3 / 100 [25.00%] @ "305000"
+// RTL Simulation : 4 / 100 [25.00%] @ "345000"
+// RTL Simulation : 5 / 100 [25.00%] @ "385000"
+// RTL Simulation : 6 / 100 [25.00%] @ "425000"
+// RTL Simulation : 7 / 100 [25.00%] @ "465000"
+// RTL Simulation : 8 / 100 [25.00%] @ "505000"
+// RTL Simulation : 9 / 100 [25.00%] @ "545000"
+// RTL Simulation : 10 / 100 [25.00%] @ "585000"
+// RTL Simulation : 11 / 100 [25.00%] @ "625000"
+// RTL Simulation : 12 / 100 [25.00%] @ "665000"
+// RTL Simulation : 13 / 100 [25.00%] @ "705000"
+// RTL Simulation : 14 / 100 [25.00%] @ "745000"
+// RTL Simulation : 15 / 100 [25.00%] @ "785000"
+// RTL Simulation : 16 / 100 [25.00%] @ "825000"
+// RTL Simulation : 17 / 100 [25.00%] @ "865000"
+// RTL Simulation : 18 / 100 [25.00%] @ "905000"
+// RTL Simulation : 19 / 100 [25.00%] @ "945000"
+// RTL Simulation : 20 / 100 [25.00%] @ "985000"
+// RTL Simulation : 21 / 100 [25.00%] @ "1025000"
+// RTL Simulation : 22 / 100 [25.00%] @ "1065000"
+// RTL Simulation : 23 / 100 [25.00%] @ "1105000"
+// RTL Simulation : 24 / 100 [25.00%] @ "1145000"
+// RTL Simulation : 25 / 100 [25.00%] @ "1185000"
+// RTL Simulation : 26 / 100 [25.00%] @ "1225000"
+// RTL Simulation : 27 / 100 [25.00%] @ "1265000"
+// RTL Simulation : 28 / 100 [25.00%] @ "1305000"
+// RTL Simulation : 29 / 100 [25.00%] @ "1345000"
+// RTL Simulation : 30 / 100 [25.00%] @ "1385000"
+// RTL Simulation : 31 / 100 [25.00%] @ "1425000"
+// RTL Simulation : 32 / 100 [25.00%] @ "1465000"
+// RTL Simulation : 33 / 100 [25.00%] @ "1505000"
+// RTL Simulation : 34 / 100 [25.00%] @ "1545000"
+// RTL Simulation : 35 / 100 [25.00%] @ "1585000"
+// RTL Simulation : 36 / 100 [25.00%] @ "1625000"
+// RTL Simulation : 37 / 100 [25.00%] @ "1665000"
+// RTL Simulation : 38 / 100 [25.00%] @ "1705000"
+// RTL Simulation : 39 / 100 [25.00%] @ "1745000"
+// RTL Simulation : 40 / 100 [25.00%] @ "1785000"
+// RTL Simulation : 41 / 100 [25.00%] @ "1825000"
+// RTL Simulation : 42 / 100 [25.00%] @ "1865000"
+// RTL Simulation : 43 / 100 [25.00%] @ "1905000"
+// RTL Simulation : 44 / 100 [25.00%] @ "1945000"
+// RTL Simulation : 45 / 100 [25.00%] @ "1985000"
+// RTL Simulation : 46 / 100 [25.00%] @ "2025000"
+// RTL Simulation : 47 / 100 [25.00%] @ "2065000"
+// RTL Simulation : 48 / 100 [25.00%] @ "2105000"
+// RTL Simulation : 49 / 100 [25.00%] @ "2145000"
+// RTL Simulation : 50 / 100 [25.00%] @ "2185000"
+// RTL Simulation : 51 / 100 [25.00%] @ "2225000"
+// RTL Simulation : 52 / 100 [25.00%] @ "2265000"
+// RTL Simulation : 53 / 100 [25.00%] @ "2305000"
+// RTL Simulation : 54 / 100 [25.00%] @ "2345000"
+// RTL Simulation : 55 / 100 [25.00%] @ "2385000"
+// RTL Simulation : 56 / 100 [25.00%] @ "2425000"
+// RTL Simulation : 57 / 100 [25.00%] @ "2465000"
+// RTL Simulation : 58 / 100 [25.00%] @ "2505000"
+// RTL Simulation : 59 / 100 [25.00%] @ "2545000"
+// RTL Simulation : 60 / 100 [25.00%] @ "2585000"
+// RTL Simulation : 61 / 100 [25.00%] @ "2625000"
+// RTL Simulation : 62 / 100 [25.00%] @ "2665000"
+// RTL Simulation : 63 / 100 [25.00%] @ "2705000"
+// RTL Simulation : 64 / 100 [25.00%] @ "2745000"
+// RTL Simulation : 65 / 100 [25.00%] @ "2785000"
+// RTL Simulation : 66 / 100 [25.00%] @ "2825000"
+// RTL Simulation : 67 / 100 [25.00%] @ "2865000"
+// RTL Simulation : 68 / 100 [25.00%] @ "2905000"
+// RTL Simulation : 69 / 100 [25.00%] @ "2945000"
+// RTL Simulation : 70 / 100 [25.00%] @ "2985000"
+// RTL Simulation : 71 / 100 [25.00%] @ "3025000"
+// RTL Simulation : 72 / 100 [25.00%] @ "3065000"
+// RTL Simulation : 73 / 100 [25.00%] @ "3105000"
+// RTL Simulation : 74 / 100 [25.00%] @ "3145000"
+// RTL Simulation : 75 / 100 [25.00%] @ "3185000"
+// RTL Simulation : 76 / 100 [25.00%] @ "3225000"
+// RTL Simulation : 77 / 100 [25.00%] @ "3265000"
+// RTL Simulation : 78 / 100 [25.00%] @ "3305000"
+// RTL Simulation : 79 / 100 [25.00%] @ "3345000"
+// RTL Simulation : 80 / 100 [25.00%] @ "3385000"
+// RTL Simulation : 81 / 100 [25.00%] @ "3425000"
+// RTL Simulation : 82 / 100 [25.00%] @ "3465000"
+// RTL Simulation : 83 / 100 [25.00%] @ "3505000"
+// RTL Simulation : 84 / 100 [25.00%] @ "3545000"
+// RTL Simulation : 85 / 100 [25.00%] @ "3585000"
+// RTL Simulation : 86 / 100 [25.00%] @ "3625000"
+// RTL Simulation : 87 / 100 [25.00%] @ "3665000"
+// RTL Simulation : 88 / 100 [25.00%] @ "3705000"
+// RTL Simulation : 89 / 100 [25.00%] @ "3745000"
+// RTL Simulation : 90 / 100 [25.00%] @ "3785000"
+// RTL Simulation : 91 / 100 [25.00%] @ "3825000"
+// RTL Simulation : 92 / 100 [25.00%] @ "3865000"
+// RTL Simulation : 93 / 100 [25.00%] @ "3905000"
+// RTL Simulation : 94 / 100 [25.00%] @ "3945000"
+// RTL Simulation : 95 / 100 [25.00%] @ "3985000"
+// RTL Simulation : 96 / 100 [25.00%] @ "4025000"
+// RTL Simulation : 97 / 100 [25.00%] @ "4065000"
+// RTL Simulation : 98 / 100 [25.00%] @ "4105000"
+// RTL Simulation : 99 / 100 [25.00%] @ "4145000"
+// RTL Simulation : 100 / 100 [100.00%] @ "4185000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 4235 ns : File "C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Nov 12 14:54:56 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 34.972 seconds; peak allocated memory: 208.914 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 39s

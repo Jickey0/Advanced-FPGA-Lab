@@ -1,0 +1,88 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=matrix_mult.cpp' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/jackh/Downloads/Matrix_Lab4/Main/matrix_mult.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=matrix_tb.cpp' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/jackh/Downloads/Matrix_Lab4/Main/matrix_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=matrix_mult' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xa7a15tcpg236-2I' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7a15t-cpg236-2I'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 2.307 seconds; current allocated memory: 145.395 MB.
+INFO: [HLS 200-10] Analyzing design file 'matrix_mult.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.736 seconds; current allocated memory: 147.336 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 28 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 26 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 26 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 24 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 24 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 24 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 39 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< col> at matrix_mult.cpp:10:9 
+INFO: [HLS 214-291] Loop 'prod' is marked as complete unroll implied by the pipeline pragma (matrix_mult.cpp:13:13)
+INFO: [HLS 214-186] Unrolling loop 'prod' (matrix_mult.cpp:13:13) in function 'matrix_mult' completely with a factor of 2 (matrix_mult.cpp:5:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.728 seconds; current allocated memory: 149.578 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 149.578 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 154.457 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 157.000 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 178.465 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'row'(matrix_mult.cpp:8:5) and 'col'(matrix_mult.cpp:10:9) in function 'matrix_mult' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'row' (matrix_mult.cpp:8:5) in function 'matrix_mult'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 178.508 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrix_mult' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix_mult' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'row_col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'row_col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 178.508 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 178.516 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix_mult' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_mult/A' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_mult/B' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_mult/AB' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrix_mult' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'matrix_mult' pipeline 'row_col' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix_mult'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.069 seconds; current allocated memory: 180.473 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.373 seconds; current allocated memory: 183.926 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.602 seconds; current allocated memory: 185.723 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for matrix_mult.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrix_mult.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 145.35 MHz
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 17.807 seconds; peak allocated memory: 185.801 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 21s

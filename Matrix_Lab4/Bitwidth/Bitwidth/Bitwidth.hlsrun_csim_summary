@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Bitwidth\\Bitwidth\\Bitwidth.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/12/25 14:44:52",
+ "timestampMillis": "1762976692214",
+ "buildStep": {
+  "cmdId": "364b78a8-3db8-407d-808b-c716f0458f2b",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Bitwidth\\Bitwidth\\logs\\Bitwidth.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Bitwidth\\hls_config.cfg --work_dir Bitwidth ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Bitwidth\\hls_config.cfg",
+   "--work_dir",
+   "Bitwidth"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Bitwidth"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:44:52",
+ "timestampMillis": "1762976692215",
+ "status": {
+  "cmdId": "364b78a8-3db8-407d-808b-c716f0458f2b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/12/25 14:44:55",
+ "timestampMillis": "1762976695481",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrix_mult",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Bitwidth\\matrix_mult.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/12/25 14:44:55",
+ "timestampMillis": "1762976695481",
+ "buildStep": {
+  "cmdId": "c17d96cd-7b66-4946-8652-01cfc6473025",
+  "name": "",
+  "logFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Bitwidth\\Bitwidth\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Bitwidth"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:44:55",
+ "timestampMillis": "1762976695482",
+ "status": {
+  "cmdId": "c17d96cd-7b66-4946-8652-01cfc6473025",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:44:58",
+ "timestampMillis": "1762976698922",
+ "status": {
+  "cmdId": "c17d96cd-7b66-4946-8652-01cfc6473025",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:44:58",
+ "timestampMillis": "1762976698996",
+ "status": {
+  "cmdId": "364b78a8-3db8-407d-808b-c716f0458f2b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:44:58",
+ "timestampMillis": "1762976698997",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:44:58",
+ "timestampMillis": "1762976698997",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,12 @@
+{
+  "name": "Flatten",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "Flatten"
+  },
+  "useSysrootToolchain": false
+}

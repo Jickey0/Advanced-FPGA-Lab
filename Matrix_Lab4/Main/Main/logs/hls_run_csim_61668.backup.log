@@ -1,0 +1,36 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=matrix_mult.cpp' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/jackh/Downloads/Matrix_Lab4/Main/matrix_mult.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=matrix_tb.cpp' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/jackh/Downloads/Matrix_Lab4/Main/matrix_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=matrix_mult' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xa7a15tcpg236-2I' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xa7a15t-cpg236-2I'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/jackh/Downloads/Matrix_Lab4/Main/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/jackh/Downloads/Matrix_Lab4/Main/Main/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../matrix_tb.cpp in debug mode
+   Generating csim.exe
+Makefile.rules:348: recipe for target 'csim.exe' failed
+ld.lld: error: duplicate symbol: matrix_mult(int (*) [2], int (*) [2], int (*) [2])
+>>> defined at ../../../../matrix_mult.cpp:1
+>>>            obj/matrix_tb.o
+>>> defined at ../../../../matrix_mult.cpp:1
+>>>            obj/matrix_mult.o
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [csim.exe] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 2.57 seconds; peak allocated memory: 144.812 MB.

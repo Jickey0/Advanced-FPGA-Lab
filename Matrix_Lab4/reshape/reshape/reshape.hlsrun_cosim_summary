@@ -1,0 +1,226 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\reshape\\reshape.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/12/25 14:56:44",
+ "timestampMillis": "1762977404097",
+ "buildStep": {
+  "cmdId": "bd15bd13-d479-484c-b622-5b00bc747990",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\reshape\\logs\\reshape.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\hls_config.cfg --work_dir reshape ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\hls_config.cfg",
+   "--work_dir",
+   "reshape"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\reshape"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:56:44",
+ "timestampMillis": "1762977404098",
+ "status": {
+  "cmdId": "bd15bd13-d479-484c-b622-5b00bc747990",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/12/25 14:56:47",
+ "timestampMillis": "1762977407422",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrix_mult",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\matrix_mult.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/12/25 14:56:47",
+ "timestampMillis": "1762977407423",
+ "buildStep": {
+  "cmdId": "dd71421c-635e-41c7-a6e6-ccda13cacaee",
+  "name": "",
+  "logFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\reshape\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\reshape"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:56:47",
+ "timestampMillis": "1762977407423",
+ "status": {
+  "cmdId": "dd71421c-635e-41c7-a6e6-ccda13cacaee",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:56:47",
+ "timestampMillis": "1762977407423",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\reshape\\hls\\sim\\report\\matrix_mult_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:56:47",
+ "timestampMillis": "1762977407424",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\reshape\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:56:47",
+ "timestampMillis": "1762977407424",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\reshape\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:56:47",
+ "timestampMillis": "1762977407425",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\reshape\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:56:47",
+ "timestampMillis": "1762977407425",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\reshape\\reshape\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:57:20",
+ "timestampMillis": "1762977440536",
+ "status": {
+  "cmdId": "dd71421c-635e-41c7-a6e6-ccda13cacaee",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:57:20",
+ "timestampMillis": "1762977440613",
+ "status": {
+  "cmdId": "bd15bd13-d479-484c-b622-5b00bc747990",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:57:20",
+ "timestampMillis": "1762977440613",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:57:20",
+ "timestampMillis": "1762977440614",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

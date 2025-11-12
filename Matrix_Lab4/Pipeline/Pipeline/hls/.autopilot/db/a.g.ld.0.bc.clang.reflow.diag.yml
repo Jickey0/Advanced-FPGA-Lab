@@ -1,0 +1,37 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: matrix_mult.cpp, Line: 15, Column: 13 }
+Function:        _Z11matrix_multPA2_iS0_S0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        prod
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_mult.cpp, Line: 5, Column: 0 }
+Function:        _Z11matrix_multPA2_iS0_S0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        prod
+  - String:          ''' ('
+  - LoopLoc:         'matrix_mult.cpp:15:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrix_mult
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_matrix_mult_ir
+Args:            
+  - Callee:          'matrix_mult(int (*) [2], int (*) [2], int (*) [2])'
+    DebugLoc:        { File: matrix_mult.cpp, Line: 5, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_matrix_mult_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

@@ -1,0 +1,32 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "matrix_mult.cpp",
+    "fileloc": 5,
+    "instructions": 11,
+    "memory_accesses": 0,
+    "name": "matrix_mult",
+    "total_instructions": 43
+  },
+  "1": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "matrix_mult.cpp",
+    "fileloc": 0,
+    "instructions": 32,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 3,
+    "name": "_Z11matrix_multPA2_iS0_S0__col",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 32
+  }
+}

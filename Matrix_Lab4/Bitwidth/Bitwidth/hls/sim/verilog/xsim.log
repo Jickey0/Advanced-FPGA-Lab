@@ -1,0 +1,187 @@
+#-----------------------------------------------------------
+# xsim v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Nov 12 14:53:29 2025
+# Process ID         : 76984
+# Current directory  : C:/Users/jackh/Downloads/Matrix_Lab4/Bitwidth/Bitwidth/hls/sim/verilog
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/matrix_mult/xsim_script.tcl}
+# Log file           : C:/Users/jackh/Downloads/Matrix_Lab4/Bitwidth/Bitwidth/hls/sim/verilog/xsim.log
+# Journal file       : C:/Users/jackh/Downloads/Matrix_Lab4/Bitwidth/Bitwidth/hls/sim/verilog\xsim.jou
+# Running On         : Jickey
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7640HS w/ Radeon 760M Graphics     
+# CPU Frequency      : 4292 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16309 MB
+# Swap memory        : 21474 MB
+# Total Virtual      : 37784 MB
+# Available Virtual  : 8933 MB
+#-----------------------------------------------------------
+source xsim.dir/matrix_mult/xsim_script.tcl
+# xsim {matrix_mult} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=matrix_mult_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {matrix_mult.tcl}
+Time resolution is 1 ps
+source matrix_mult.tcl
+## run all
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------------------
+Name                         Type                           Size  Value
+-----------------------------------------------------------------------
+uvm_test_top                 matrix_mult_test_lib           -     @342 
+  top_env                    matrix_mult_env                -     @353 
+    matrix_mult_virtual_sqr  matrix_mult_virtual_sequencer  -     @390 
+      rsp_export             uvm_analysis_export            -     @399 
+      seq_item_export        uvm_seq_item_pull_imp          -     @517 
+      arbitration_queue      array                          0     -    
+      lock_queue             array                          0     -    
+      num_last_reqs          integral                       32    'd1  
+      num_last_rsps          integral                       32    'd1  
+    refm                     matrix_mult_reference_model    -     @368 
+      trans_num_idx          integral                       32    'h0  
+    subsys_mon               matrix_mult_subsystem_monitor  -     @381 
+      scbd                   matrix_mult_scoreboard         -     @537 
+        refm                 matrix_mult_reference_model    -     @368 
+          trans_num_idx      integral                       32    'h0  
+    refm                     matrix_mult_reference_model    -     @368 
+    matrix_mult_virtual_sqr  matrix_mult_virtual_sequencer  -     @390 
+    matrix_mult_cfg          matrix_mult_config             -     @367 
+      check_ena              integral                       32    'h0  
+      cover_ena              integral                       32    'h0  
+-----------------------------------------------------------------------
+
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 100 [0.00%] @ "125000"
+// RTL Simulation : 1 / 100 [33.33%] @ "235000"
+// RTL Simulation : 2 / 100 [33.33%] @ "275000"
+// RTL Simulation : 3 / 100 [33.33%] @ "315000"
+// RTL Simulation : 4 / 100 [33.33%] @ "355000"
+// RTL Simulation : 5 / 100 [33.33%] @ "395000"
+// RTL Simulation : 6 / 100 [33.33%] @ "435000"
+// RTL Simulation : 7 / 100 [33.33%] @ "475000"
+// RTL Simulation : 8 / 100 [33.33%] @ "515000"
+// RTL Simulation : 9 / 100 [33.33%] @ "555000"
+// RTL Simulation : 10 / 100 [33.33%] @ "595000"
+// RTL Simulation : 11 / 100 [33.33%] @ "635000"
+// RTL Simulation : 12 / 100 [33.33%] @ "675000"
+// RTL Simulation : 13 / 100 [33.33%] @ "715000"
+// RTL Simulation : 14 / 100 [33.33%] @ "755000"
+// RTL Simulation : 15 / 100 [33.33%] @ "795000"
+// RTL Simulation : 16 / 100 [33.33%] @ "835000"
+// RTL Simulation : 17 / 100 [33.33%] @ "875000"
+// RTL Simulation : 18 / 100 [33.33%] @ "915000"
+// RTL Simulation : 19 / 100 [33.33%] @ "955000"
+// RTL Simulation : 20 / 100 [33.33%] @ "995000"
+// RTL Simulation : 21 / 100 [33.33%] @ "1035000"
+// RTL Simulation : 22 / 100 [33.33%] @ "1075000"
+// RTL Simulation : 23 / 100 [33.33%] @ "1115000"
+// RTL Simulation : 24 / 100 [33.33%] @ "1155000"
+// RTL Simulation : 25 / 100 [33.33%] @ "1195000"
+// RTL Simulation : 26 / 100 [33.33%] @ "1235000"
+// RTL Simulation : 27 / 100 [33.33%] @ "1275000"
+// RTL Simulation : 28 / 100 [33.33%] @ "1315000"
+// RTL Simulation : 29 / 100 [33.33%] @ "1355000"
+// RTL Simulation : 30 / 100 [33.33%] @ "1395000"
+// RTL Simulation : 31 / 100 [33.33%] @ "1435000"
+// RTL Simulation : 32 / 100 [33.33%] @ "1475000"
+// RTL Simulation : 33 / 100 [33.33%] @ "1515000"
+// RTL Simulation : 34 / 100 [33.33%] @ "1555000"
+// RTL Simulation : 35 / 100 [33.33%] @ "1595000"
+// RTL Simulation : 36 / 100 [33.33%] @ "1635000"
+// RTL Simulation : 37 / 100 [33.33%] @ "1675000"
+// RTL Simulation : 38 / 100 [33.33%] @ "1715000"
+// RTL Simulation : 39 / 100 [33.33%] @ "1755000"
+// RTL Simulation : 40 / 100 [33.33%] @ "1795000"
+// RTL Simulation : 41 / 100 [33.33%] @ "1835000"
+// RTL Simulation : 42 / 100 [33.33%] @ "1875000"
+// RTL Simulation : 43 / 100 [33.33%] @ "1915000"
+// RTL Simulation : 44 / 100 [33.33%] @ "1955000"
+// RTL Simulation : 45 / 100 [33.33%] @ "1995000"
+// RTL Simulation : 46 / 100 [33.33%] @ "2035000"
+// RTL Simulation : 47 / 100 [33.33%] @ "2075000"
+// RTL Simulation : 48 / 100 [33.33%] @ "2115000"
+// RTL Simulation : 49 / 100 [33.33%] @ "2155000"
+// RTL Simulation : 50 / 100 [33.33%] @ "2195000"
+// RTL Simulation : 51 / 100 [33.33%] @ "2235000"
+// RTL Simulation : 52 / 100 [33.33%] @ "2275000"
+// RTL Simulation : 53 / 100 [33.33%] @ "2315000"
+// RTL Simulation : 54 / 100 [33.33%] @ "2355000"
+// RTL Simulation : 55 / 100 [33.33%] @ "2395000"
+// RTL Simulation : 56 / 100 [33.33%] @ "2435000"
+// RTL Simulation : 57 / 100 [33.33%] @ "2475000"
+// RTL Simulation : 58 / 100 [33.33%] @ "2515000"
+// RTL Simulation : 59 / 100 [33.33%] @ "2555000"
+// RTL Simulation : 60 / 100 [33.33%] @ "2595000"
+// RTL Simulation : 61 / 100 [33.33%] @ "2635000"
+// RTL Simulation : 62 / 100 [33.33%] @ "2675000"
+// RTL Simulation : 63 / 100 [33.33%] @ "2715000"
+// RTL Simulation : 64 / 100 [33.33%] @ "2755000"
+// RTL Simulation : 65 / 100 [33.33%] @ "2795000"
+// RTL Simulation : 66 / 100 [33.33%] @ "2835000"
+// RTL Simulation : 67 / 100 [33.33%] @ "2875000"
+// RTL Simulation : 68 / 100 [33.33%] @ "2915000"
+// RTL Simulation : 69 / 100 [33.33%] @ "2955000"
+// RTL Simulation : 70 / 100 [33.33%] @ "2995000"
+// RTL Simulation : 71 / 100 [33.33%] @ "3035000"
+// RTL Simulation : 72 / 100 [33.33%] @ "3075000"
+// RTL Simulation : 73 / 100 [33.33%] @ "3115000"
+// RTL Simulation : 74 / 100 [33.33%] @ "3155000"
+// RTL Simulation : 75 / 100 [33.33%] @ "3195000"
+// RTL Simulation : 76 / 100 [33.33%] @ "3235000"
+// RTL Simulation : 77 / 100 [33.33%] @ "3275000"
+// RTL Simulation : 78 / 100 [33.33%] @ "3315000"
+// RTL Simulation : 79 / 100 [33.33%] @ "3355000"
+// RTL Simulation : 80 / 100 [33.33%] @ "3395000"
+// RTL Simulation : 81 / 100 [33.33%] @ "3435000"
+// RTL Simulation : 82 / 100 [33.33%] @ "3475000"
+// RTL Simulation : 83 / 100 [33.33%] @ "3515000"
+// RTL Simulation : 84 / 100 [33.33%] @ "3555000"
+// RTL Simulation : 85 / 100 [33.33%] @ "3595000"
+// RTL Simulation : 86 / 100 [33.33%] @ "3635000"
+// RTL Simulation : 87 / 100 [33.33%] @ "3675000"
+// RTL Simulation : 88 / 100 [33.33%] @ "3715000"
+// RTL Simulation : 89 / 100 [33.33%] @ "3755000"
+// RTL Simulation : 90 / 100 [33.33%] @ "3795000"
+// RTL Simulation : 91 / 100 [33.33%] @ "3835000"
+// RTL Simulation : 92 / 100 [33.33%] @ "3875000"
+// RTL Simulation : 93 / 100 [33.33%] @ "3915000"
+// RTL Simulation : 94 / 100 [33.33%] @ "3955000"
+// RTL Simulation : 95 / 100 [33.33%] @ "3995000"
+// RTL Simulation : 96 / 100 [33.33%] @ "4035000"
+// RTL Simulation : 97 / 100 [33.33%] @ "4075000"
+// RTL Simulation : 98 / 100 [33.33%] @ "4115000"
+// RTL Simulation : 99 / 100 [33.33%] @ "4155000"
+// RTL Simulation : 100 / 100 [100.00%] @ "4195000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 4245 ns : File "C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Nov 12 14:53:33 2025...

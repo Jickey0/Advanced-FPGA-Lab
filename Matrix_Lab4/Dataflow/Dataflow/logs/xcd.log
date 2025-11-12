@@ -1,0 +1,75 @@
+11/12/25 15:14:27: Running xcd server. This server was built by gradle.
+11/12/25 15:14:27: Server was asked to start on port: '50409'
+11/12/25 15:14:27: Server is using token UUID: '58b843a6-5622-45b5-bf4b-f88a27ea9e31'
+11/12/25 15:14:27: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/12/25 15:14:27: Attempting to start server on port '50409'
+11/12/25 15:14:27: Running Dispatch Server
+11/12/25 15:14:27: Version 2.2.0
+11/12/25 15:14:30: Dispatch Server: Accepted socket connection from client
+11/12/25 15:14:30: Starting Socket connection
+11/12/25 15:14:30: EXCHANGE_TOKEN received, server token: 58b843a6-5622-45b5-bf4b-f88a27ea9e31, passed token: 58b843a6-5622-45b5-bf4b-f88a27ea9e31
+11/12/25 15:14:30: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/12/25 15:14:30: SESSION_MGR: creating session with session uuid: 'ce5a2b5b-db25-4518-9375-5680dbfc188b' and name 'v++_compile_Dataflow'
+11/12/25 15:14:30: KERNEL_SVC: creating session with uuid: 'ce5a2b5b-db25-4518-9375-5680dbfc188b' and name 'v++_compile_Dataflow'
+11/12/25 15:14:30: GUIDANCE_SMGR: creating guidance session with uuid: 'ce5a2b5b-db25-4518-9375-5680dbfc188b' and name 'v++_compile_Dataflow'
+11/12/25 15:14:30: SYSTEM_DIAGRAM: creating session with uuid: 'ce5a2b5b-db25-4518-9375-5680dbfc188b' and name 'v++_compile_Dataflow'
+11/12/25 15:14:33: Dispatch Server: Accepted socket connection from client
+11/12/25 15:14:33: Starting Socket connection
+11/12/25 15:14:43: SESSION_MGR: closing session for UUID 'ce5a2b5b-db25-4518-9375-5680dbfc188b' with name 'v++_compile_Dataflow'
+11/12/25 15:14:43: KERNEL_SVC: closing session for UUID 'ce5a2b5b-db25-4518-9375-5680dbfc188b' with name 'v++_compile_Dataflow'
+11/12/25 15:14:43: GUIDANCE_SMGR: closing session for UUID 'ce5a2b5b-db25-4518-9375-5680dbfc188b' with name 'v++_compile_Dataflow'
+11/12/25 15:14:43: SYSTEM_DIAGRAM: closing session for UUID 'ce5a2b5b-db25-4518-9375-5680dbfc188b' with name 'v++_compile_Dataflow'
+11/12/25 15:14:43: STOP_SERVER received, server token: 58b843a6-5622-45b5-bf4b-f88a27ea9e31, passed token: 58b843a6-5622-45b5-bf4b-f88a27ea9e31
+11/12/25 15:14:43: Socket received request to stop server.
+11/12/25 15:14:43: Dispatch Server: do_await_stop
+11/12/25 15:14:43: SERVER: destructor for server bound to port 50409
+11/12/25 15:15:08: Running xcd server. This server was built by gradle.
+11/12/25 15:15:08: Server was asked to start on port: '56771'
+11/12/25 15:15:08: Server is using token UUID: '791529f9-2b40-4528-931e-b325f92a4764'
+11/12/25 15:15:08: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/12/25 15:15:08: Attempting to start server on port '56771'
+11/12/25 15:15:08: Running Dispatch Server
+11/12/25 15:15:08: Version 2.2.0
+11/12/25 15:15:11: Dispatch Server: Accepted socket connection from client
+11/12/25 15:15:11: Starting Socket connection
+11/12/25 15:15:11: EXCHANGE_TOKEN received, server token: 791529f9-2b40-4528-931e-b325f92a4764, passed token: 791529f9-2b40-4528-931e-b325f92a4764
+11/12/25 15:15:11: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/12/25 15:15:11: SESSION_MGR: creating session with session uuid: 'ea859459-73dc-4c86-856c-0a8d89cd82ab' and name 'v++_compile_Dataflow'
+11/12/25 15:15:11: KERNEL_SVC: creating session with uuid: 'ea859459-73dc-4c86-856c-0a8d89cd82ab' and name 'v++_compile_Dataflow'
+11/12/25 15:15:11: GUIDANCE_SMGR: creating guidance session with uuid: 'ea859459-73dc-4c86-856c-0a8d89cd82ab' and name 'v++_compile_Dataflow'
+11/12/25 15:15:11: SYSTEM_DIAGRAM: creating session with uuid: 'ea859459-73dc-4c86-856c-0a8d89cd82ab' and name 'v++_compile_Dataflow'
+11/12/25 15:15:14: Dispatch Server: Accepted socket connection from client
+11/12/25 15:15:14: Starting Socket connection
+11/12/25 15:15:27: SESSION_MGR: closing session for UUID 'ea859459-73dc-4c86-856c-0a8d89cd82ab' with name 'v++_compile_Dataflow'
+11/12/25 15:15:27: KERNEL_SVC: closing session for UUID 'ea859459-73dc-4c86-856c-0a8d89cd82ab' with name 'v++_compile_Dataflow'
+11/12/25 15:15:27: GUIDANCE_SMGR: closing session for UUID 'ea859459-73dc-4c86-856c-0a8d89cd82ab' with name 'v++_compile_Dataflow'
+11/12/25 15:15:27: SYSTEM_DIAGRAM: closing session for UUID 'ea859459-73dc-4c86-856c-0a8d89cd82ab' with name 'v++_compile_Dataflow'
+11/12/25 15:15:27: STOP_SERVER received, server token: 791529f9-2b40-4528-931e-b325f92a4764, passed token: 791529f9-2b40-4528-931e-b325f92a4764
+11/12/25 15:15:27: Socket received request to stop server.
+11/12/25 15:15:27: Dispatch Server: do_await_stop
+11/12/25 15:15:27: SERVER: destructor for server bound to port 56771
+11/12/25 15:15:45: Running xcd server. This server was built by gradle.
+11/12/25 15:15:45: Server was asked to start on port: '57665'
+11/12/25 15:15:45: Server is using token UUID: '34f9e57f-f61b-405b-99a1-ff902c337c30'
+11/12/25 15:15:45: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+11/12/25 15:15:45: Attempting to start server on port '57665'
+11/12/25 15:15:45: Running Dispatch Server
+11/12/25 15:15:45: Version 2.2.0
+11/12/25 15:15:48: Dispatch Server: Accepted socket connection from client
+11/12/25 15:15:48: Starting Socket connection
+11/12/25 15:15:48: EXCHANGE_TOKEN received, server token: 34f9e57f-f61b-405b-99a1-ff902c337c30, passed token: 34f9e57f-f61b-405b-99a1-ff902c337c30
+11/12/25 15:15:48: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+11/12/25 15:15:48: SESSION_MGR: creating session with session uuid: 'de36e300-1534-4e94-8a37-c6a5533a40f5' and name 'vitis-run_compile_Dataflow'
+11/12/25 15:15:48: KERNEL_SVC: creating session with uuid: 'de36e300-1534-4e94-8a37-c6a5533a40f5' and name 'vitis-run_compile_Dataflow'
+11/12/25 15:15:48: GUIDANCE_SMGR: creating guidance session with uuid: 'de36e300-1534-4e94-8a37-c6a5533a40f5' and name 'vitis-run_compile_Dataflow'
+11/12/25 15:15:48: SYSTEM_DIAGRAM: creating session with uuid: 'de36e300-1534-4e94-8a37-c6a5533a40f5' and name 'vitis-run_compile_Dataflow'
+11/12/25 15:15:51: Dispatch Server: Accepted socket connection from client
+11/12/25 15:15:51: Starting Socket connection
+11/12/25 15:16:24: SESSION_MGR: closing session for UUID 'de36e300-1534-4e94-8a37-c6a5533a40f5' with name 'vitis-run_compile_Dataflow'
+11/12/25 15:16:24: KERNEL_SVC: closing session for UUID 'de36e300-1534-4e94-8a37-c6a5533a40f5' with name 'vitis-run_compile_Dataflow'
+11/12/25 15:16:24: GUIDANCE_SMGR: closing session for UUID 'de36e300-1534-4e94-8a37-c6a5533a40f5' with name 'vitis-run_compile_Dataflow'
+11/12/25 15:16:24: SYSTEM_DIAGRAM: closing session for UUID 'de36e300-1534-4e94-8a37-c6a5533a40f5' with name 'vitis-run_compile_Dataflow'
+11/12/25 15:16:24: STOP_SERVER received, server token: 34f9e57f-f61b-405b-99a1-ff902c337c30, passed token: 34f9e57f-f61b-405b-99a1-ff902c337c30
+11/12/25 15:16:24: Socket received request to stop server.
+11/12/25 15:16:24: Dispatch Server: do_await_stop
+11/12/25 15:16:24: SERVER: destructor for server bound to port 57665

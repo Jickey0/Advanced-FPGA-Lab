@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../matrix_tb.cpp in debug mode
+   Compiling ../../../../matrix_mult.cpp in debug mode
+   Generating csim.exe
+Makefile.rules:348: recipe for target 'csim.exe' failed
+ld.lld: error: duplicate symbol: matrix_mult(int (*) [2], int (*) [2], int (*) [2])
+>>> defined at ../../../../matrix_mult.cpp:1
+>>>            obj/matrix_tb.o
+>>> defined at ../../../../matrix_mult.cpp:1
+>>>            obj/matrix_mult.o
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [csim.exe] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

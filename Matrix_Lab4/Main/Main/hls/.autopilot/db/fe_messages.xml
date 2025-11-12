@@ -1,0 +1,15 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrix_mult" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matrix_mult" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_mult.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matrix_mult" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="matrix_mult.cpp:12:30" msg_body="Loop 'VITIS_LOOP_12_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_12_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_mult.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_12_3' (matrix_mult.cpp:12:30) in function 'matrix_mult' completely with a factor of 2">
+        <args Factor="2" LoopLoc="matrix_mult.cpp:12:30" LoopName="VITIS_LOOP_12_3"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

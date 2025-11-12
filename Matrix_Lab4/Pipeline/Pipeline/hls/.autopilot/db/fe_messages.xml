@@ -1,0 +1,18 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrix_mult" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matrix_mult" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_mult.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matrix_mult" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="matrix_mult.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matrix_mult" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="matrix_mult.cpp:15:13" msg_body="Loop 'prod' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="prod"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrix_mult.cpp:5:0" msg_body="Unrolling loop 'prod' (matrix_mult.cpp:15:13) in function 'matrix_mult' completely with a factor of 2">
+        <args Factor="2" LoopLoc="matrix_mult.cpp:15:13" LoopName="prod"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

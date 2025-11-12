@@ -1,0 +1,145 @@
+
+
+================================================================
+== Vitis HLS Report for 'matrix_mult'
+================================================================
+* Date:           Wed Nov 12 15:15:26 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        Dataflow
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: aartix7
+* Target device:  xa7a15t-cpg236-2I
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.880 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |        8|        8|  80.000 ns|  80.000 ns|    4|    4|  dataflow|
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +------------------+---------------+---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+        |                  |               |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                    |
+        |     Instance     |     Module    |   min   |   max   |    min    |    max    | min | max |                      Type                      |
+        +------------------+---------------+---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+        |Loop_row_proc_U0  |Loop_row_proc  |        8|        8|  80.000 ns|  80.000 ns|    4|    4|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +------------------+---------------+---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      -|      -|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   6|    340|    301|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      -|      -|    -|
+|Register         |        -|   -|      -|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   6|    340|    301|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |       50|  45|  20800|  10400|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|  13|      1|      2|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------+---------------+---------+----+-----+-----+-----+
+    |     Instance     |     Module    | BRAM_18K| DSP|  FF | LUT | URAM|
+    +------------------+---------------+---------+----+-----+-----+-----+
+    |Loop_row_proc_U0  |Loop_row_proc  |        0|   6|  340|  301|    0|
+    +------------------+---------------+---------+----+-----+-----+-----+
+    |Total             |               |        0|   6|  340|  301|    0|
+    +------------------+---------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+--------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------+-----+-----+------------+--------------+--------------+
+|A_address0   |  out|    2|   ap_memory|             A|         array|
+|A_ce0        |  out|    1|   ap_memory|             A|         array|
+|A_d0         |  out|   32|   ap_memory|             A|         array|
+|A_q0         |   in|   32|   ap_memory|             A|         array|
+|A_we0        |  out|    1|   ap_memory|             A|         array|
+|A_address1   |  out|    2|   ap_memory|             A|         array|
+|A_ce1        |  out|    1|   ap_memory|             A|         array|
+|A_d1         |  out|   32|   ap_memory|             A|         array|
+|A_q1         |   in|   32|   ap_memory|             A|         array|
+|A_we1        |  out|    1|   ap_memory|             A|         array|
+|B_address0   |  out|    2|   ap_memory|             B|         array|
+|B_ce0        |  out|    1|   ap_memory|             B|         array|
+|B_d0         |  out|   32|   ap_memory|             B|         array|
+|B_q0         |   in|   32|   ap_memory|             B|         array|
+|B_we0        |  out|    1|   ap_memory|             B|         array|
+|B_address1   |  out|    2|   ap_memory|             B|         array|
+|B_ce1        |  out|    1|   ap_memory|             B|         array|
+|B_d1         |  out|   32|   ap_memory|             B|         array|
+|B_q1         |   in|   32|   ap_memory|             B|         array|
+|B_we1        |  out|    1|   ap_memory|             B|         array|
+|AB_address0  |  out|    2|   ap_memory|            AB|         array|
+|AB_ce0       |  out|    1|   ap_memory|            AB|         array|
+|AB_d0        |  out|   32|   ap_memory|            AB|         array|
+|AB_q0        |   in|   32|   ap_memory|            AB|         array|
+|AB_we0       |  out|    1|   ap_memory|            AB|         array|
+|AB_address1  |  out|    2|   ap_memory|            AB|         array|
+|AB_ce1       |  out|    1|   ap_memory|            AB|         array|
+|AB_d1        |  out|   32|   ap_memory|            AB|         array|
+|AB_q1        |   in|   32|   ap_memory|            AB|         array|
+|AB_we1       |  out|    1|   ap_memory|            AB|         array|
+|ap_clk       |   in|    1|  ap_ctrl_hs|   matrix_mult|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|   matrix_mult|  return value|
+|ap_start     |   in|    1|  ap_ctrl_hs|   matrix_mult|  return value|
+|ap_done      |  out|    1|  ap_ctrl_hs|   matrix_mult|  return value|
+|ap_ready     |  out|    1|  ap_ctrl_hs|   matrix_mult|  return value|
+|ap_idle      |  out|    1|  ap_ctrl_hs|   matrix_mult|  return value|
++-------------+-----+-----+------------+--------------+--------------+
+

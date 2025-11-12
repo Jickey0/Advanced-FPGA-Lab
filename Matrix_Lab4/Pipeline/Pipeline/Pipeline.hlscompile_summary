@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\Pipeline\\Pipeline.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "11/12/25 14:49:42",
+ "timestampMillis": "1762976982400",
+ "buildStep": {
+  "cmdId": "e573255c-0074-490f-b714-b9f5336faae7",
+  "name": "v++",
+  "logFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\Pipeline\\logs\\Pipeline.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\hls_config.cfg --work_dir Pipeline ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\hls_config.cfg",
+   "--work_dir",
+   "Pipeline"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\hls_config.cfg",
+    "content": "part=xa7a15tcpg236-2I\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\ntb.file=matrix_tb.cpp\nsyn.file=matrix_mult.cpp\nsyn.top=matrix_mult"
+   }
+  ],
+  "cwd": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:49:42",
+ "timestampMillis": "1762976982400",
+ "status": {
+  "cmdId": "e573255c-0074-490f-b714-b9f5336faae7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "11/12/25 14:49:45",
+ "timestampMillis": "1762976985502",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrix_mult",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\matrix_mult.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "11/12/25 14:49:45",
+ "timestampMillis": "1762976985503",
+ "buildStep": {
+  "cmdId": "58d2d92c-6ca7-43ce-8b40-a395a3169ad4",
+  "name": "",
+  "logFile": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\Pipeline\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:49:45",
+ "timestampMillis": "1762976985504",
+ "status": {
+  "cmdId": "58d2d92c-6ca7-43ce-8b40-a395a3169ad4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:49:45",
+ "timestampMillis": "1762976985504",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\Pipeline\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:49:45",
+ "timestampMillis": "1762976985504",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\Pipeline\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:49:45",
+ "timestampMillis": "1762976985505",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\Pipeline\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:49:58",
+ "timestampMillis": "1762976998196",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\Pipeline\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:49:58",
+ "timestampMillis": "1762976998196",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\Pipeline\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:49:58",
+ "timestampMillis": "1762976998196",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\Pipeline\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:49:58",
+ "timestampMillis": "1762976998197",
+ "status": {
+  "cmdId": "58d2d92c-6ca7-43ce-8b40-a395a3169ad4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "11/12/25 14:49:58",
+ "timestampMillis": "1762976998274",
+ "status": {
+  "cmdId": "e573255c-0074-490f-b714-b9f5336faae7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:49:58",
+ "timestampMillis": "1762976998290",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\Pipeline\\reports\\v++_compile_Pipeline_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "11/12/25 14:49:58",
+ "timestampMillis": "1762976998291",
+ "report": {
+  "path": "C:/Users\\jackh\\Downloads\\Matrix_Lab4\\Pipeline\\Pipeline\\reports\\.db\\v++_compile_Pipeline_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
